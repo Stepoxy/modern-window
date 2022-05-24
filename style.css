@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid rgba(229,229,229);
-
+    position: relative;
 }
 
 .box .btn {
@@ -45,3 +45,42 @@ body {
     padding: 18px;
     cursor: pointer;
 }
+
+.box .btn.active {
+    color: #7360ff;
+}
+
+.content-box {
+    padding: 20px;
+}
+
+.content-box .content {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+
+}
+
+.content-box .content.active {
+    display: block;
+}
+
+.content-box .content h2 {
+    margin-bottom: 10px;
+}
+
+.line {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 87px;
+    height: 5px;
+    background: #7360ff;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
