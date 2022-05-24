@@ -1,4 +1,4 @@
-# modern-window
+# modern-window :pager:
 
 > Nav-Bar moderne
 > 
